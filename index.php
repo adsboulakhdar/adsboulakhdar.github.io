@@ -1,4 +1,6 @@
 <?php
+// Start the session
+session_start();
 
 //$_POST['range']= 0;
 //$_POST['range']= 0;
