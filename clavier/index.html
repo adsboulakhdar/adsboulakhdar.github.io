@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Clavier Arabe 3000 ™ أسرع وأجدد لوحة للكتابة بالعربية</title>
+    <meta name="keywords" content="clavier arab, clavier arabe, virtuelle clavier arabe, clavier, arabic clavier, لوحة مفاتيح, كيبورد عربي ">
+    <meta name="description" content="Clavier arabe est un clavier en arabe qui vous aide a ecrire et typer facilement l'arabe alphabet sur l'internet.clavier arabe visuel">
+    <meta name="author" content="Ahmad Ismail v2">
+    <script src="prototype_new1679.js?6" type="text/javascript"></script>
+  
+    <link rel="SHORTCUT ICON" type="image/ico" href="faviconc81e.ico?2">
+    <script type="text/javascript">
+
+crossorigin="anonymous"></script>
+    <script src="../cdn.jsdelivr.net/npm/clipboard%402.0.8/dist/clipboard.min.js"></script>
+  </head>
+  <body>
+        
+        <style>
+
+</style>
+        
+        
+        *{font-size:1em;margin:0;padding:0;}
+
+body{background-color:#bfbfbf; }
+h3{font-family:georgia;margin:5px;}
+input{-webkit-appearance:none}
+a { color:#2982e6} a:visited{ color:#2982e6 }  a:hover{ color:#E62982; text-decoration:underline }
+#main{background:#fff;height:1500px;position:relative;width:1320px;margin:10px auto;  box-shadow: 0 4px 7px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+
+#copyright{bottom:25px;color:#aaa;font-family:georgia;font-size:11px;height:30px;position:absolute;right:0;width:200px;z-index:2;}
+#left-footer{background:#fff url(i/left-footer.png) no-repeat;bottom:0px;height:200px;left:9px;position:absolute;width:415px;z-index:2;}
+#logo-right{position:absolute;right:10px;top:15px;z-index:100; background:#fff;}
+#logo-left{ height:44px;left:10px;padding-left:8px;position:absolute;top:15px;width:400px;z-index:100;}
+#logo-left h1{color:#404040;font-family:Georgia;font-size:36px;letter-spacing:1.2pt;text-shadow:#ccc 0 2px 2px;}
+#area{border:4px solid #717986;color:#000;direction:rtl;font-family:'Times New Roman';font-size:24px;height:220px;left:175px;padding-right:4px;position:absolute;top:90px;width:768px;}
+#vor-key{background:#fff url(i/vor-key.png) repeat-x;height:39px;left:175px;position:absolute;top:313px;width:780px;}
+#key1{background:#fff url(i/key1-bg.png); background-repeat:repeat-x; height:300px;left:175px;position:absolute;top:350px;width:780px;z-index:2;}
+#inhalt{left:170px;position:absolute;top:660px;}
+#sater1{height:30px;position:relative;width:730px;margin:10px auto;}
+#sater2{height:30px;position:relative;width:668px;margin:15px auto;}
+#sater3{height:30px;position:relative;width:622px;margin:15px auto;}
+#sater4{height:30px;position:relative;width:518px;margin:15px auto;}
+#arqam{height:30px;position:relative;width:574px;margin:20px auto;}
+#skoun{height:30px;position:relative;width:386px;margin:15px auto;}
+.btn,.btn2{display:block;float:left;margin-right:4px;position:relative;text-align:center;}
+.btn{background:url(i/input.png) no-repeat 0 0;color:#C03;font-size:28px;font-weight:700;height:40px;width:53px;}
+.btn2{background:url(i/double_input.png) no-repeat 0 0;color:#555;font-size:17px;height:40px;width:82px;}
+.btn2:hover{background:url(i/double_input.png) no-repeat 0 -29px;}
+.btn2:active{background:url(i/double_input.png) no-repeat 0 -58px;}
+#space{background:#646E7A url(i/onkey.png) no-repeat -50px -36px;display:block;float:left;height:34px;width:310px;}
+#space:hover{background:#646E7A url(i/onkey.png) no-repeat -50px -1px;}
+#space:active{background:#646E7A url(i/onkey.png) no-repeat -50px -36px;}
+#youtube{background:#646E7A url(i/onkey.png) no-repeat -460px -1px;display:block;float:left;height:34px;margin-right:7px;width:97px;}
+#google{background:#646E7A url(i/onkey.png) no-repeat -363px -1px;display:block;float:left;height:34px;margin-left:7px;width:93px;}
+#youtube:hover{background:#646E7A url(i/onkey.png) no-repeat -460px -36px;}
+#google:hover{background:#646E7A url(i/onkey.png) no-repeat -363px -36px;}
+
+.klein,.he, .big{color:#222;cursor:pointer; font-size:18px; line-height:27px;  font-family:'Times New Roman'; width:33pt;background: #fefefe; border-radius: 4px; transition: all 0.1s ease-in-out; border:1px solid #888;}
+.klein:hover,.he:hover, .big:hover{  box-shadow: 0px 1px 1px 0 green; color:#000; outline: none; }
+
+#toolbar-tip{    height: 34px;left: 270px; position: absolute;width: 46px; z-index: 4;font-size: 1.2em;color: yellow;}
+#fontplus{background:url(i/button.png) no-repeat -1px -2px;cursor:pointer;height:34px;left:5px;position:absolute;top:-3px;width:46px;z-index:4;}
+#fontminus{background:url(i/button.png) no-repeat -50px -2px;cursor:pointer;height:34px;left:55px;position:absolute;top:-3px;width:46px;z-index:4;}
+#font-display{background:url(i/input.png) no-repeat -2px -2px;display:none;height:28px;left:260px;position:absolute;top:3px;width:40px;z-index:4;border:2px solid #eee;font-size:26px;font-weight:700;color:#767E8B;vertical-align:middle;text-align:center;}
+#save{background:url(i/button.png) no-repeat -98px -2px;cursor:pointer;height:34px;left:105px;position:absolute;top:-3px;width:46px;z-index:4; border:none;}
+#copy{background:url(i/button.png) no-repeat -146px -2px;cursor:pointer;height:34px;left:205px;position:absolute;top:-3px;width:46px;z-index:4; border:none;}
+#print{background:url(i/button.png) no-repeat -194px -2px;cursor:pointer;height:34px;left:155px;position:absolute;top:-3px;width:46px;z-index:4; border:none;}
+#fontplus:hover{background:url(i/button.png) no-repeat -1px -41px;}
+#fontminus:hover{background:url(i/button.png) no-repeat -50px -41px;}
+#save:hover{background:url(i/button.png) no-repeat -98px -41px;}
+#copy:hover{background:url(i/button.png) no-repeat -146px -41px;}
+#print:hover{background:url(i/button.png) no-repeat -194px -41px;}
+#font{height:40px;left:0;position:absolute;top:5px;width:300px;}
+#zeil1{background:url(i/untertab.png) repeat-x top;color:#313131;font-size:30px;}
+#zeil3{background:url(i/untertab.png) repeat-x top;color:#313131;font-size:28px;}
+#zeil2{background-color:#eee;color:#555;font-size:29px;}
+#zeil4{background-color:#eee;color:#555;font-size:27px;}
+.s{color:red;}
+td,tr,table{direction:rtl;}
+.tab td{padding:3px;}
+.tab{border:3px solid #ccc;}
+#back{background:#767E8B url(i/onkey.png) no-repeat 0 -1px;cursor:pointer;height:33px;position:absolute;right:0;top:-2px;width:46px;z-index:4;}
+#back:hover{background:#767E8B url(i/onkey.png) no-repeat 0 -36px;}
+#umw{position:absolute;right:30px;top:2px;width:170px;}
+#actif{background:url(i/actif.png) no-repeat 0 0;cursor:pointer;height:29px;position:absolute;right:-25px;top:0;width:45px;z-index:4;}
+#actif:hover{background:url(i/actif.png) no-repeat 0 -51px;cursor:pointer;position:absolute;z-index:4;}
+#text{color:#aaa;font-family:verdana;font-size:14px;right:30px;position:absolute;top:7px; direction:rtl; width:300px}
+
+#aa{color:#8F96A1;position:absolute;left:620px;text-align:justify;top:845px;width:320px;z-index:300;}
+#bb{color:#8F96A1;position:absolute;left:170px;;text-align:justify;top:955px;width:790px;z-index:60;}
+#cc{color:#8F96A1;position:absolute;left:620px;text-align:justify;top:1100px;width:320px;}
+#dd{color:#8F96A1;position:absolute; left:170px;text-align:justify;top:1100px;width:370px;}
+#dd a { color:#2982e6} #dd a:hover { color:#E62982; }
+
+
+#links{left:8px;position:absolute;top:90px;z-index:5;}
+#linkads{left:8px;position:absolute;top:90px;}
+#rightads{position:absolute;right:10px;top:90px;}
+#rightads-top{position:absolute;right:10px;top:90px;}
+#rightads-bottom{position:absolute;right:10px;top:380px;}
+#share{  left: 10px; position: absolute; top: 44px;  width: 100px;  z-index: 33;}
+#share img{vertical-align:middle}
+#share a{text-decoration:none}
+#round-right{background:url(i/round.png) no-repeat -28px 0;bottom:-1px;height:28px;position:absolute;right:-1px;width:27px;z-index:4;}
+#round-left{background:url(i/round.png) no-repeat 0 1px;bottom:0;height:28px;left:0;position:absolute;width:28px;z-index:4;}
+#aa h3,#bb h3,#cc h3,#dd h3{border-bottom:1px dashed #8F96A1;padding-bottom:10px;}
+
+
+#help{position:absolute; height:160px; width:742px; top:136px;  left:204px;}
+#fasel{ position:relative; float:right; height:5px; width:20px; background:#ccc; top:13px; display:none}
+#sug{ position:relative; float:right;  cursor:pointer; display:none}
+#word{  padding:5px; padding-left:10px; padding-right:10px; text-align:right; color:#000; background:#efe; border:1px solid #ccc; font-size:15px; font-family:tahoma; direction:rtl; clear:both;  } 
+#sug_key{ float:right}
+#magnifier{display:block; float:left; height:16px;  width:22px;  background:url(i/magnifier.png) no-repeat top left; margin-top:3px; margin-right:12px; margin-left:-3px;}
+#magnifier:hover{background-position:bottom left; }  
+
+#extra_sug{position:relative; float:right; max-height:100%; overflow: auto; width:450px; border:1px solid #ccc; background:#f9f9f9;display:none}
+#extra_post{position:relative; padding:5px; padding-left:10px; padding-right:10px; text-align:right; color:#000;   font-size:15px; font-family:tahoma; direction:rtl}
+.post_title{ font-weight:bold; font-size:0.9em }
+.post_desc { position:relative; margin-top:10px; font-size:0.8em; color:#222}
+.post_desc  img{float:right; border:2px solid #fff;  outline:2px solid #ddd; margin-left:12px; padding:2px;  }
+.post_desc a{ position:relative; margin-bottom:5px;}
+
+#vote{position:absolute; bottom:0px; z-index:2; left:490px;}
+#textlink{position:absolute; bottom:200px; z-index:2; left:190px;}
+#lang-site{position:relative;width:1130px;margin:10px auto 30px auto;}
+#lang-site a{color:#555}
+
+#question{ position: absolute; top:51px; left: 180px; width: 770px; z-index: 10000; }
+#question_ejabat a{ text-decoration: none}
+#vor_question{ color: #3b791f; }
+
+        
+        
+        
+        
+        
+    <div id="main">
+      <div id="logo-left">
+        <h1>Clavier Arab </h1>
+        <div id="share">&nbsp; <br>
+        </div>
+ 
+     
+
+
+        <script>
+
+</script></div>
+      <div id="left-footer"></div>
+      <div id="header-main">
+        <div id="response"></div>
+      </div>
+      <form method="post" id="send" onsubmit="return OnSubmitForm();"> <textarea
+
+id="area" name="area" onkeyup="Ersetzung()"></textarea>
+        <div id="help">
+          <div id="sug">
+            <div id="word"></div>
+          </div>
+          <div id="fasel"></div>
+          <div id="extra_sug">
+            <div id="extra_post"></div>
+          </div>
+        </div>
+        
+        <div id="vor-key">
+          <div id="font">
+            <div onclick="FontSize(-1)" id="fontplus"></div>
+            <div onclick="FontSize(1)" id="fontminus"></div>
+            <input id="save" value="" onclick="document.pressed=1" type="submit">
+            <div id="copy" data-clipboard-target="#area" onclick="return false"></div>
+            <input id="print" value="" onclick="document.pressed=2" type="submit">
+            <span id="toolbar-tip"></span> </div>
+          <div id="font-display"></div>
+          <div id="umw">
+            <div id="actif" onclick="umw()"></div>
+            <div id="text">تعريب الأحرف اللاتنية transliteration <span id="off">(غير
+                فعال)</span></div>
+          </div>
+        </div>
+      </form>
+      <div id="key1">
+        <div id="sater1"> <input value="ض" onclick="schreib('ض')" class="big" type="button">
+          <input value="ص" onclick="schreib('ص')" class="big" type="button"> <input
+
+value="ش" onclick="schreib('ش')" class="klein" type="button"> <input value="س"
+
+onclick="schreib('س')" class="klein" type="button"> <input value="ز" onclick="schreib('ز')"
+
+class="klein" type="button"> <input value="ر" onclick="schreib('ر')" class="klein"
+
+type="button"> <input value="ذ" onclick="schreib('ذ')" class="klein" type="button">
+          <input value="د" onclick="schreib('د')" class="klein" type="button"> <input
+
+value="خ" onclick="schreib('خ')" class="klein" type="button"> <input value="ح"
+
+onclick="schreib('ح')" class="klein" type="button"> <input value="ج" onclick="schreib('ج')"
+
+class="klein" type="button"> <input value="ث" onclick="schreib('ث')" class="klein"
+
+type="button"> <input value="ت" onclick="schreib('ت')" class="klein" type="button">
+          <input value="ب" onclick="schreib('ب')" class="klein" type="button"> <input
+
+value="ا" onclick="schreib('ا')" class="klein" type="button"> </div>
+        <div id="sater2"> <input value="ء" onclick="schreib('ء')" class="klein"
+
+type="button"> <input value="ي" onclick="schreib('ي')" class="klein" type="button">
+          <input value="و" onclick="schreib('و')" class="klein" type="button"> <input
+
+value="ه" onclick="schreib('ه')" class="klein" type="button"> <input value="ن"
+
+onclick="schreib('ن')" class="klein" type="button"> <input value="م" onclick="schreib('م')"
+
+class="klein" type="button"> <input value="ل" onclick="schreib('ل')" class="klein"
+
+type="button"> <input value="ك" onclick="schreib('ك')" class="klein" type="button">
+          <input value="ق" onclick="schreib('ق')" class="klein" type="button"> <input
+
+value="ف" onclick="schreib('ف')" class="klein" type="button"> <input value="غ"
+
+onclick="schreib('غ')" class="klein" type="button"> <input value="ع" onclick="schreib('ع')"
+
+class="klein" type="button"> <input value="ظ" onclick="schreib('ظ')" class="klein"
+
+type="button"> <input value="ط" onclick="schreib('ط')" class="klein" type="button">
+        </div>
+        <div id="sater3"> <input value="؟" onclick="schreib('؟')" class="klein"
+
+type="button"> <input value="؛" onclick="schreib('؛')" class="klein" type="button">
+          <input value="،" onclick="schreib('،')" class="klein" type="button"> <input
+
+value="." onclick="schreib('.')" class="klein" type="button"> <input value="ـ"
+
+onclick="schreib('ـ')" class="klein" type="button"> <input value="ى" onclick="schreib('ى')"
+
+class="klein" type="button"> <input value="ئ" onclick="schreib('ئ')" class="klein"
+
+type="button"> <input value="ؤ" onclick="schreib('ؤ')" class="klein" type="button">
+          <input value="ة" onclick="schreib('ة')" class="klein" type="button"> <input
+
+value="آ" onclick="schreib('آ')" class="klein" type="button"> <input value="إ"
+
+onclick="schreib('إ')" class="klein" type="button"> <input value="أ" onclick="schreib('أ')"
+
+class="klein" type="button">
+          <div id="back" onclick="im7i()"></div>
+        </div>
+        <div id="sater4"> <a onclick="openYoutube('')" onmouseover="insertTOsuggest(); return false;"
+
+            href="#" id="youtube"><span></span></a> <a onclick="schreib(' ')" href="#"
+
+            id="space"><span></span></a> <a onclick="openGoogle('')" onmouseover="insertTOsuggest(); return false;"
+
+            href="#" id="google"><span></span></a></div>
+        <div id="arqam" dir="rtl"> <input value="+" onclick="schreib('+')" class="klein"
+
+type="button"> <input value="-" onclick="schreib('-')" class="klein" type="button">
+          <input value="٠" onclick="schreib('٠')" class="klein" type="button"> <input
+
+value="٩" onclick="schreib('٩')" class="klein" type="button"> <input value="٨"
+
+onclick="schreib('٨')" class="klein" type="button"> <input value="٧" onclick="schreib('٧')"
+
+class="klein" type="button"> <input value="٦" onclick="schreib('٦')" class="klein"
+
+type="button"> <input value="٥" onclick="schreib('٥')" class="klein" type="button">
+          <input value="٤" onclick="schreib('٤')" class="klein" type="button"> <input
+
+value="٣" onclick="schreib('٣')" class="klein" type="button"> <input value="٢"
+
+onclick="schreib('٢')" class="klein" type="button"> <input value="١" onclick="schreib('١')"
+
+class="klein" type="button"> </div>
+        <div id="skoun"> <input value="َ" onclick="schreib('َ')" class="he" type="button">
+          <input value="ِ" onclick="schreib('ِ')" class="he" type="button"> <input
+
+value="ُ" onclick="schreib('ُ')" class="he" type="button"> <input value="ً" onclick="schreib('ً')"
+
+class="he" type="button"> <input value="ٍ" onclick="schreib('ٍ')" class="he" type="button">
+          <input value="ٌ" onclick="schreib('ٌ')" class="he" type="button"> <input
+
+value="ّ" onclick="schreib('ّ')" class="he" type="button"> <input value="ْ" onclick="schreib('ْ')"
+
+class="he" type="button"> </div>
+        <div id="round-left"></div>
+        <div id="round-right"></div>
+      </div>
+      <!--Key1-->
+      <div id="inhalt"> <br>
+        <h3 style="color:#47505F"><img src="i/idea.png" alt="arabe" height="14px"
+
+            width="14px"> Les conversions de caractères: </h3>
+        <table class="tab">
+          <tbody>
+            <tr class="zeil" id="zeil1">
+              <td>ا</td>
+              <td>ب</td>
+              <td>ت</td>
+              <td>ث</td>
+              <td>ج</td>
+              <td>ح</td>
+              <td>خ</td>
+              <td>د</td>
+              <td>ذ</td>
+              <td>ر</td>
+              <td>ز</td>
+              <td>س</td>
+              <td>ش</td>
+              <td>ص</td>
+              <td>ض</td>
+              <td>ط</td>
+              <td>ظ</td>
+              <td>ع</td>
+              <td>غ</td>
+              <td>ف</td>
+              <td>ق</td>
+              <td>ك</td>
+              <td>ل</td>
+              <td>م</td>
+              <td>ن</td>
+              <td>ه</td>
+              <td>و</td>
+              <td>ي</td>
+            </tr>
+            <tr class="zeil" id="zeil2">
+              <td>a</td>
+              <td>b</td>
+              <td>t</td>
+              <td>c</td>
+              <td>j</td>
+              <td>7</td>
+              <td>5</td>
+              <td>d</td>
+              <td>'d</td>
+              <td>r</td>
+              <td>z</td>
+              <td>s</td>
+              <td>ch</td>
+              <td>S</td>
+              <td>D</td>
+              <td>T</td>
+              <td>Z</td>
+              <td>3</td>
+              <td>'3</td>
+              <td>f</td>
+              <td>q</td>
+              <td>k</td>
+              <td>l</td>
+              <td>m</td>
+              <td>n</td>
+              <td>h</td>
+              <td>o</td>
+              <td>y</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <h3 style="color:#47505F"><img src="i/idea.png" alt="arabe" height="14px"
+
+            width="14px"> Les autres caractères: </h3>
+        <table class="tab" style="margin-right:0px">
+          <tbody>
+            <tr class="zeil" id="zeil3">
+              <td>ة</td>
+              <td>أ</td>
+              <td>إ</td>
+              <td>آ</td>
+              <td>ء</td>
+              <td>ئ</td>
+              <td>ؤ</td>
+              <td>ُ</td>
+              <td>َ</td>
+              <td>ِ</td>
+              <td>ٌ</td>
+              <td>ً</td>
+              <td>ٍ</td>
+            </tr>
+            <tr class="zeil" id="zeil4">
+              <td>H</td>
+              <td> 'a</td>
+              <td> I </td>
+              <td> e </td>
+              <td> 2 </td>
+              <td> ee </td>
+              <td> o' </td>
+              <td>=o</td>
+              <td>=a</td>
+              <td>=i</td>
+              <td>=on</td>
+              <td>=an</td>
+              <td>=in</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--inhalt-->
+      <div id="aa">
+        <h3 style="color:#47505F"><img src="i/idea.png" alt="arabe" height="14px"
+
+            width="14px"> Clavier Arab</h3>
+        C'est un clavier en caractères arabes qui vous aide à écrire des mots et
+        des phrases plus facilement sur l'internet. </div>
+      <div id="bb">
+        <h3 style="color:#47505F"><img src="i/idea.png" alt="arabe" height="14px"
+
+            width="14px"> Mode d'emploi</h3>
+        Ce clavier virtuel est destiné aux personnes arabisantes qui ne
+        possèdent pas de clavier en langue arabe ou toute autre personne qui
+        voudrait écrire ou étudier la langue arabe. Ce site web permet d'écrire
+        avec la souris en cliquant sur la lettre convenable sur le clavier
+        virtuel du site ou, à défaut, d'utiliser directement la touche de votre
+        clavier qui correspond au caractère arabe désiré.</div>
+      <div id="cc">
+        <h3 style="color:#47505F"><img src="i/idea.png" alt="arabe" height="14px"
+
+            width="14px"> Améliorations</h3>
+        Si vous avez des conseils ou commentaires qui nous aident à améliorer ce
+        clavier, ajouter ou modifier quelque chose, n'hésitez pas à nous
+        contacter sur l'e-mail mentionné au bas de cette page. Cordialement.
+        Merci. <b>Clavier Arab</b>. </div>
+      <script>
+	var clipboard = new ClipboardJS('#copy');
+	clipboard.on('success', function(e) {
+		 
+     $('#toolbar-tip').html('Copied').show().delay(2000).fadeOut();
+    
+});
+</script><!--<script type="text/javascript" id="cookiebanner"
+  src="https://cdn.jsdelivr.net/gh/dobarkod/cookie-banner@1.2.2/dist/cookiebanner.min.js"></script>-->
+      <div id="footer"></div>
+      <!--footer-->
+      <div id="copyright">Author: Y.B<br>
+
+        <h4>Copyright: Clavier Arab 2025</h4>
+      </div>
+      <div id="links"> </div>
+      <div id="dd">
+        <h3 style="color:#47505F"><img src="i/idea.png" alt="arabe" height="14px"
+
+            width="14px"> Links:</h3>
+        <p> <a href="#" title="arabic keyboard">Arabic
+            keyboard</a> <br>
+          web 2.0 arabic keyboard (English Version)) </p>
+        <p> <a href="#" title="Clavier arabe">Clavier
+            arabe</a> <br>
+          web 2.0 arabic keyboard (French Version)) </p>
+      </div>
+    </div>
+    <!--main-->
+
+
+  </body>
+  
+</html>
